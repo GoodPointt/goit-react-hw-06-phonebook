@@ -1,11 +1,12 @@
 {
-  "name": "phonebook-ts",
+  "name": "goit-react-hw-06-phonebook",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://GoodPointt.github.io/phonebook-ts/",
+  "homepage": "https://GoodPointt.github.io/goit-react-hw-06-phonebook/",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
@@ -14,6 +15,7 @@
     "nanoid": "^4.0.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-redux": "^8.1.1",
     "react-scripts": "^5.0.1",
     "react-toastify": "^9.1.3",
     "typescript": "^4.9.5",
