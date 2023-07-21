@@ -50,6 +50,12 @@ export const StyledBtn = styled.button`
   font-size: 16px;
   font-weight: bold;
 
+  &.add {
+    display: block;
+    margin: 0 auto;
+    font-size: 32px;
+  }
+
   &::after {
     content: '';
     position: absolute;

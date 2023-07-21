@@ -1,12 +1,16 @@
-import { StyledInput } from '../Styled.styled';
-import { ThandleChange } from 'components/App';
+import { StyledInput } from 'components/Styled.styled';
+import { ThandleChange } from 'common/utils';
 
-interface IFilter {
-  handleChange: (evt: ThandleChange) => void;
-  filter: string;
-}
+import { changeFilter } from 'store/filterSlice';
+import { useAppDispatch, useAppSelector } from 'common/hooks';
 
-export const Filter = ({ handleChange, filter }: IFilter) => {
+export const Filter = () => {
+  const filter: string = useAppSelector(state => state.filter.filter);
+  const dispatch = useAppDispatch();
+  const handleChange = (evt: ThandleChange): void => {
+    let { value, name } = evt.target;
+    if (name === 'filter') dispatch(changeFilter({ filter: value }));
+  };
   return (
     <StyledInput
       onChange={handleChange}
