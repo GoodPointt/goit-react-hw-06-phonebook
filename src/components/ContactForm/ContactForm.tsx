@@ -2,14 +2,14 @@ import { toast } from 'react-toastify';
 import { nanoid } from 'nanoid';
 import { Formik, Field, ErrorMessage, Form } from 'formik';
 
-import { StyledBtn, ErrorMsg, StyledInput } from 'components/Styled.styled';
+import { StyledBtn, ErrorMsg, StyledInput } from '../Styled.styled';
 
-import { INITIAL_VALUES, VALIDATION_SCHEMA } from 'common/formik';
-import { INewContact, isContactExist } from 'common/utils';
-import { useAppDispatch, useAppSelector } from 'common/hooks';
+import { INITIAL_VALUES, VALIDATION_SCHEMA } from '../../common/formik';
+import { INewContact, isContactExist } from '../../common/utils';
+import { useAppDispatch, useAppSelector } from '../../common/hooks';
 
-import { addNewContact } from 'store/contactsSlice';
-import { changeFilter } from 'store/filterSlice';
+import { addNewContact } from '../../store/contactsSlice';
+import { changeFilter } from '../../store/filterSlice';
 
 interface IContactForm {
   closeModal: () => void;

@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { toast } from 'react-toastify';
-import { INewContact } from 'common/utils';
+import { INewContact } from '../common/utils';
 
 interface ContactsState {
   contacts: INewContact[];

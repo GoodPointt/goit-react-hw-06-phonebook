@@ -1,8 +1,8 @@
-import { StyledInput } from 'components/Styled.styled';
-import { ThandleChange } from 'common/utils';
+import { StyledInput } from '../Styled.styled';
+import { ThandleChange } from '../../common/utils';
 
-import { changeFilter } from 'store/filterSlice';
-import { useAppDispatch, useAppSelector } from 'common/hooks';
+import { changeFilter } from '../../store/filterSlice';
+import { useAppDispatch, useAppSelector } from '../../common/hooks';
 
 export const Filter = () => {
   const filter: string = useAppSelector(state => state.filter.filter);

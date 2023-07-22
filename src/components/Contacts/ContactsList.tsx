@@ -1,13 +1,13 @@
-import { StyledList, StyledText } from 'components/Styled.styled';
+import { StyledList, StyledText } from '../Styled.styled';
 
-import { useAppDispatch, useAppSelector } from 'common/hooks';
-import { INewContact } from 'common/utils';
+import { useAppDispatch, useAppSelector } from '../../common/hooks';
+import { INewContact } from '../../common/utils';
 
-import { Filter } from 'components/Filter/Filter';
+import { Filter } from '../../components/Filter/Filter';
 import { ContactsItem } from './ContactsItem';
 
-import { changeFilter } from 'store/filterSlice';
-import { deleteContact } from 'store/contactsSlice';
+import { changeFilter } from '../../store/filterSlice';
+import { deleteContact } from '../../store/contactsSlice';
 
 export const ContactsList = () => {
   const contacts = useAppSelector(state => state.contacts.contacts);

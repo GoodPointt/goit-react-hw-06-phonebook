@@ -1,9 +1,5 @@
-import { INewContact } from 'common/utils';
-import {
-  StyledItem,
-  StyledItemBtn,
-  StyledText,
-} from 'components/Styled.styled';
+import { INewContact } from '../../common/utils';
+import { StyledItem, StyledItemBtn, StyledText } from '../Styled.styled';
 
 interface IContactsItem {
   contact: INewContact;
